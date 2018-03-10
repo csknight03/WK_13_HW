@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+<!-- jQuery CDN-->
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Bootstrap CDN-->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" align="center">
+            <h1>
+                <span class="glyphicon glyphicon-th-list"></span> Disney Friend Finding Survey</h1>
+            <hr>
+            <h2>Answer the questions below to find your Disney friend!</h2>
+            <br>
+            <p>
+                <a class="btn btn-primary btn-lg" href="home.html" role="button">Home</a>
+            </p>
+        </div>
+        <hr>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title" align="center">
+                            <strong>Basic Profile Setup</strong>
+                        </h1>
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" role="form">
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Link to Photo Image</label>
+                                <input type="text" class="form-control" id="photo">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" align="center">
+
+            <div class="col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h1 class="panel-title" align="center">
+                            <strong>Survey Questions</strong>
+                        </h1>
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" role="form">
+
+                            <h4>Question: 1</h4>
+                            <h5>I enjoy reading a good book.</h5>
+                            <select class="chosen-select" id="question1">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 2</h4>
+                            <h5>I'm very open to trying new foods and different cultures.</h5>
+                            <select class="chosen-select" id="question2">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 3</h4>
+                            <h5>I talk more than most people.</h5>
+                            <select class="chosen-select" id="question3">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 4</h4>
+                            <h5>I feel quite comfortable in a large group of people.</h5>
+                            <select class="chosen-select" id="question4">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 5</h4>
+                            <h5>I rarely get angry.</h5>
+                            <select class="chosen-select" id="question5">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 6</h4>
+                            <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+                            <select class="chosen-select" id="question6">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 7</h4>
+                            <h5>My relationships with my friends are very important to me.</h5>
+                            <select class="chosen-select" id="question7">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 8</h4>
+                            <h5>I love to have excitement in my life.</h5>
+                            <select class="chosen-select" id="question8">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 9</h4>
+                            <h5>I am a hard working person.</h5>
+                            <select class="chosen-select" id="question9">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                            <hr>
+                            <h4>Question: 10</h4>
+                            <h5>I don't express my feeling easily.</h5>
+                            <select class="chosen-select" id="question10">
+                                <option value="select">Select an Option</option>
+                                <option value="1">1 (Strongly Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3 (Neutral)</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Strongly Agree)</option>
+                            </select>
+                        </form>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-md" id="add-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            <a href="/api/friends">API Friends List</a>
+        </p>
+    </div>
+
+    <!--modal setup-->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <div class="caption" align="center">Your new bestie is ... </div>
+                    <img src="" id="imagePreview" height=80% width=80%>
+                    <div class="caption" id="caption" align="center"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        $("#add-btn").on("click", function () {
+            event.preventDefault();
+            $('#add-btn').html('<i class="far fa-check-circle" style="font-size: 2em";></i>');
+            $('#add-btn').removeClass("btn-primary");
+            $('#add-btn').addClass("btn-success");
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $(
+                    "#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val()]
+            };
+            alert("Searching for your match...");
+            $.post("/api/new", newFriend)
+                .done(function (data) {
+                    console.log("Code is working");
+                    console.log(data);
+                    $('#caption').text(data.name);
+                    $('#imagePreview').attr('src', data.photo);
+                    $('#imagemodal').modal('show');
+                    console.log("Code is working");
+                });
+                // resetting form
+            $("#name").val("");
+            $("#photo").val("");
+            [$("#question1").val(""), $("#question2").val(""), $("#question3").val(""), $("#question4").val(""), $("#question5").val(""), $("#question6")
+                .val(""), $("#question7").val(""), $("#question8").val(""), $("#question9").val(""), $("#question10").val("")
+            ]
+        });
+    </script>
+<!-- Font Awesome CDN -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+
+</html>
